@@ -18,8 +18,11 @@
 - learn how to use flex 
 
 ### Chat List Design
+- css object-fit 
+- i need to learn more css  
 
 ### React Search Bar Design
+- useState 
 
 ### User List Design
 
