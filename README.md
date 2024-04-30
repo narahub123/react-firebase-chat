@@ -3,11 +3,15 @@
 ### Installation
 
 ### Chat App Database Structure
-- need to know how to use vw and vh 
 
 ### React Chat Application Design Tutorial
 
+- need to know how to use vw and vh
+
 ### CSS Glass Background Effect
+
+- learn how to use backdrop-filter(CSS)
+- caniuse.com : cross-browsing site
 
 ### Chat App Components
 
