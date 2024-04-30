@@ -2,8 +2,8 @@ Introduction
 
 Installation
 
-Chat App Database Structure
-need to know how to use vw and vh 
+### Chat App Database Structure
+- need to know how to use vw and vh 
 
 React Chat Application Design Tutorial
 
