@@ -1,76 +1,76 @@
-Introduction
+### Introduction
 
-Installation
+### Installation
 
 ### Chat App Database Structure
 - need to know how to use vw and vh 
 
-React Chat Application Design Tutorial
+### React Chat Application Design Tutorial
 
-CSS Glass Background Effect
+### CSS Glass Background Effect
 
-Chat App Components
+### Chat App Components
 
-Chat List Design
+### Chat List Design
 
-React Search Bar Design
+### React Search Bar Design
 
-User List Design
+### User List Design
 
-React Chat Component Design
+### React Chat Component Design
 
-React.js How to Add Emoji? (React Emoji Picker)
+### React.js How to Add Emoji? (React Emoji Picker)
 
-Chat Messages Design
+### Chat Messages Design
 
-Chat Detail Component Design
+### Chat Detail Component Design
 
-React Auto-Scroll using useRef Hook
+### React Auto-Scroll using useRef Hook
 
-React Login Page Design
+### React Login Page Design
 
-React Notification Library (React Toastify)
+### React Notification Library (React Toastify)
 
-Add New User Component
+### Add New User Component
 
-React Firebase Tutorial 2024
+### React Firebase Tutorial 2024
 
-React Firebase Authentication Tutorial
+### React Firebase Authentication Tutorial
 
-React Firebase Sign Up with Email and Password
+### React Firebase Sign Up with Email and Password
 
-React Firebase How to Add the User Data to Firestore After the Authentication?
+### React Firebase How to Add the User Data to Firestore After the Authentication?
 
-React Firebase How to Upload Image?
+### React Firebase How to Upload Image?
 
-React Firebase Login (Sign in) with Email and Password
+### React Firebase Login (Sign in) with Email and Password
 
-React Firebase How to Store the User After the Authentication?
+### React Firebase How to Store the User After the Authentication?
 
-React Why Do We Need State Management Tools?
+### React Why Do We Need State Management Tools?
 
-React Firebase Auth with Zustand State Management Tool
+### React Firebase Auth with Zustand State Management Tool
 
-React Firebase Fetching Real-time Data
+### React Firebase Fetching Real-time Data
 
-Fetch User Chats from Firestore
+### Fetch User Chats from Firestore
 
-React Search a User from Firebase Firestore
+### React Search a User from Firebase Firestore
 
-Create a New Chat in React
+### Create a New Chat in React
 
-Fetch a Single Chat and Chat Messages
+### Fetch a Single Chat and Chat Messages
 
-React Zustand Chat Store
+### React Zustand Chat Store
 
-Add a New Chat Message
+### Add a New Chat Message
 
-Add an Image to the Chat Message
+### Add an Image to the Chat Message
 
-How to Block / Unblock User?
+### How to Block / Unblock User?
 
-React Search Filter Tutorial
+### React Search Filter Tutorial
 
-How to Deploy a React App to a VPS in 5 Minutes?
+### How to Deploy a React App to a VPS in 5 Minutes?
 
-Outro
+### Outro
