@@ -14,6 +14,8 @@
 - caniuse.com : cross-browsing site
 
 ### Chat App Components
+- learn how to create components with separate css 
+- learn how to use flex 
 
 ### Chat List Design
 
