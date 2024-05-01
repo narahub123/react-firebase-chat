@@ -52,11 +52,15 @@
 ### React Login Page Design
 
 ### React Notification Library (React Toastify)
-- Learn how to use toastify 
+
+- Learn how to use toastify
 
 ### Add New User Component
 
 ### React Firebase Tutorial 2024
+
+- install firebase library
+- configuration
 
 ### React Firebase Authentication Tutorial
 
