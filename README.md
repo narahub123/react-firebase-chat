@@ -33,17 +33,21 @@
 - auto scrollbar : understand how to handle overflow
 
 ### React Chat Component Design
-- styling 
+
+- styling
 
 ### React.js How to Add Emoji? (React Emoji Picker)
-- Learn how to use emoji picker 
-- how to handle dynamic argument in set function of useState 
+
+- Learn how to use emoji picker
+- how to handle dynamic argument in set function of useState
 
 ### Chat Messages Design
 
 ### Chat Detail Component Design
 
 ### React Auto-Scroll using useRef Hook
+
+- auto scrolling : scrollIntoView()
 
 ### React Login Page Design
 
