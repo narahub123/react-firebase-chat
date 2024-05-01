@@ -36,6 +36,8 @@
 - styling 
 
 ### React.js How to Add Emoji? (React Emoji Picker)
+- Learn how to use emoji picker 
+- how to handle dynamic argument in set function of useState 
 
 ### Chat Messages Design
 
