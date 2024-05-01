@@ -33,6 +33,7 @@
 - auto scrollbar : understand how to handle overflow
 
 ### React Chat Component Design
+- styling 
 
 ### React.js How to Add Emoji? (React Emoji Picker)
 
