@@ -68,6 +68,8 @@
 - firebase storage : store photos
 
 ### React Firebase Sign Up with Email and Password
+- create user with email and password(authentication) 
+- add user to firestore 
 
 ### React Firebase How to Add the User Data to Firestore After the Authentication?
 
