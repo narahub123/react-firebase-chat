@@ -14,17 +14,23 @@
 - caniuse.com : cross-browsing site
 
 ### Chat App Components
-- learn how to create components with separate css 
-- learn how to use flex 
+
+- learn how to create components with separate css
+- learn how to use flex
 
 ### Chat List Design
-- css object-fit 
-- i need to learn more css  
+
+- css object-fit
+- i need to learn more css
 
 ### React Search Bar Design
-- useState 
+
+- useState
 
 ### User List Design
+
+- add user(chat) list
+- auto scrollbar : understand how to handle overflow
 
 ### React Chat Component Design
 
