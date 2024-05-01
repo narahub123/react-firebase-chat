@@ -74,6 +74,8 @@
 - add user to firestore 
 
 ### React Firebase How to Upload Image?
+- upload image with storage 
+- add loading indicator 
 
 ### React Firebase Login (Sign in) with Email and Password
 
