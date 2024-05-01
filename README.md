@@ -63,6 +63,9 @@
 - configuration
 
 ### React Firebase Authentication Tutorial
+- authentication : email 
+- firestore database : db 
+- firebase storage : store photos
 
 ### React Firebase Sign Up with Email and Password
 
