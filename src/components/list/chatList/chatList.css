@@ -1,7 +1,6 @@
 .chatList {
   flex: 1;
   overflow: auto;
-
   .search {
     display: flex;
     align-items: center;
