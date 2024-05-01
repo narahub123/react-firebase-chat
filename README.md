@@ -52,6 +52,7 @@
 ### React Login Page Design
 
 ### React Notification Library (React Toastify)
+- Learn how to use toastify 
 
 ### Add New User Component
 
