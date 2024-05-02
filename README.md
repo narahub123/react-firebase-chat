@@ -63,19 +63,23 @@
 - configuration
 
 ### React Firebase Authentication Tutorial
-- authentication : email 
-- firestore database : db 
+
+- authentication : email
+- firestore database : db
 - firebase storage : store photos
 
 ### React Firebase Sign Up with Email and Password
-- create user with email and password(authentication) 
+
+- create user with email and password(authentication)
 
 ### React Firebase How to Add the User Data to Firestore After the Authentication?
-- add user to firestore 
+
+- add user to firestore
 
 ### React Firebase How to Upload Image?
-- upload image with storage 
-- add loading indicator 
+
+- upload image with storage
+- add loading indicator
 
 ### React Firebase Login (Sign in) with Email and Password
 
@@ -84,6 +88,12 @@
 ### React Why Do We Need State Management Tools?
 
 ### React Firebase Auth with Zustand State Management Tool
+
+- Zustand
+- create userStore
+- get data from firestore
+- use the fetched data
+- logout
 
 ### React Firebase Fetching Real-time Data
 
