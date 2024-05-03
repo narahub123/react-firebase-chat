@@ -3,11 +3,14 @@ import "./chat.css";
 import EmojiPicker from "emoji-picker-react";
 import { doc, onSnapshot } from "firebase/firestore";
 import { db } from "../../lib/firebase";
+import { useChatStore } from "../../lib/chatStore";
 
 const Chat = () => {
   const [chat, setChat] = useState();
   const [open, setOpen] = useState(false);
   const [text, setText] = useState("");
+
+  const { chatId } = useChatStore();
 
   const endRef = useRef(null);
 
@@ -16,17 +19,14 @@ const Chat = () => {
   }, []);
 
   useEffect(() => {
-    const unSub = onSnapshot(
-      doc(db, "chats", "TEHuThJHlM15e1D0yaJd"),
-      (res) => {
-        setChat(res.data());
-      }
-    );
+    const unSub = onSnapshot(doc(db, "chats", chatId), (res) => {
+      setChat(res.data());
+    });
 
     return () => {
       unSub();
     };
-  }, []);
+  }, [chatId]);
 
   console.log(chat);
 
@@ -56,80 +56,15 @@ const Chat = () => {
         </div>
       </div>
       <div className="center">
-        <div className="message">
-          <img src="./avatar.png" alt="" />
-          <div className="texts">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit nam
-              magnam, id quasi excepturi totam rem aliquam, quas harum ipsam
-              placeat minima consequuntur earum eum dolor, architecto minus
-              voluptatem quisquam.
-            </p>
-            <span>1 min ago</span>
-          </div>
-        </div>
-        <div className="message own">
-          <div className="texts">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit nam
-              magnam, id quasi excepturi totam rem aliquam, quas harum ipsam
-              placeat minima consequuntur earum eum dolor, architecto minus
-              voluptatem quisquam.
-            </p>
-            <span>1 min ago</span>
-          </div>
-        </div>
-        <div className="message">
-          <img src="./avatar.png" alt="" />
-          <div className="texts">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit nam
-              magnam, id quasi excepturi totam rem aliquam, quas harum ipsam
-              placeat minima consequuntur earum eum dolor, architecto minus
-              voluptatem quisquam.
-            </p>
-            <span>1 min ago</span>
-          </div>
-        </div>
-        <div className="message own">
-          <div className="texts">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit nam
-              magnam, id quasi excepturi totam rem aliquam, quas harum ipsam
-              placeat minima consequuntur earum eum dolor, architecto minus
-              voluptatem quisquam.
-            </p>
-            <span>1 min ago</span>
-          </div>
-        </div>
-        <div className="message">
-          <img src="./avatar.png" alt="" />
-          <div className="texts">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit nam
-              magnam, id quasi excepturi totam rem aliquam, quas harum ipsam
-              placeat minima consequuntur earum eum dolor, architecto minus
-              voluptatem quisquam.
-            </p>
-            <span>1 min ago</span>
-          </div>
-        </div>
-        <div className="message own">
-          <div className="texts">
-            <img
-              src="https://images.pexels.com/photos/19155212/pexels-photo-19155212/free-photo-of-roof-on-a-yellow-building.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
-            "
-              alt=""
-            />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit nam
-              magnam, id quasi excepturi totam rem aliquam, quas harum ipsam
-              placeat minima consequuntur earum eum dolor, architecto minus
-              voluptatem quisquam.
-            </p>
-            <span>1 min ago</span>
-          </div>
-        </div>
+        {chat?.messages?.map((message) => {
+          <div className="message own" key={message?.createdAt}>
+            <div className="texts">
+              {message.img && <img src={message.img} alt="" />}
+              <p>{message.text}</p>
+              {/* <span>{message}</span> */}
+            </div>
+          </div>;
+        })}
         <div ref={endRef}></div>
       </div>
       <div className="bottom">
