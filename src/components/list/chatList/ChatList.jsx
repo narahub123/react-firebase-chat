@@ -3,7 +3,7 @@ import "./chatList.css";
 
 import React, { useEffect, useState } from "react";
 import { useUserStore } from "../../../lib/userStore";
-import { doc, getDoc, onSnapshot } from "firebase/firestore";
+import { doc, getDoc, onSnapshot, updateDoc } from "firebase/firestore";
 import { db } from "../../../lib/firebase";
 import { useChatStore } from "../../../lib/chatStore";
 
@@ -46,6 +46,30 @@ const ChatList = () => {
   // console.log(chats);
 
   const handleSelect = async (chat) => {
+    const userChats = chats.map((item) => {
+      const { user, ...rest } = item;
+
+      return rest;
+    });
+
+    const chatIndex = userChats.findIndex(
+      (item) => item.chatId === chat.chatId
+    );
+
+    userChats[chatIndex].isSeen = true;
+
+    const useChatsRef = doc(db, "userchats", currentUser.id);
+
+    try {
+      await updateDoc(useChatsRef, {
+        chats: userChats,
+      });
+
+      changeChat(chat.chatId, chat.user);
+    } catch (err) {
+      console.log(err);
+    }
+
     changeChat(chat.chatId, chat.user);
   };
 
@@ -68,6 +92,9 @@ const ChatList = () => {
           className="item"
           key={chat.chatId}
           onClick={() => handleSelect(chat)}
+          style={{
+            backgroundColor: chat?.isSeen ? "transparent" : "#5183fe", // read or not
+          }}
         >
           <img src={chat.user.avatar || "./avatar.png"} alt="" />
           <div className="texts">
